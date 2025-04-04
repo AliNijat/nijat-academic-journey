@@ -1,0 +1,404 @@
+/* External CSS stylesheet */
+
+/* Styling the body of the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Styling for the header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* General container settings */
+
+.main-page .feature-section {
+    background-image: url('images/academic1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.main-page .feature-section::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Fix the top value to 0 */
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+.main-page .feature-text {
+    padding-top: 100px; /* Adjust padding if necessary */
+    text-align: center;
+    color: #ffffff;
+    z-index: 2; /* Make sure text appears above the overlay */
+    position: relative; /* Ensure the text sits properly */
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #333; /* Blue background color */
+    padding: 10px 0;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Light shadow */
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Navigation links list */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #d1d5db; /* Hover effect (gray color) */
+}
+
+
+/* Styling for paragraphs */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+h1, p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Styling for all links */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Styling for buttons */
+.main-button {
+    text-align: center;
+    margin-top: 50px;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+/* Styling for the footer */
+.footer-content{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    position: relative; /* Changed from sticky to relative */
+    bottom: 0;
+    width: 100%; /* Changed from full to 100% */
+}
+
+/* Class selector: .highlight for highlighted text */
+.highlight {
+    background-color: yellow;
+    padding: 2px 5px;
+}
+
+/* Class selector: .center-text for centering text */
+.center-text {
+    text-align: center;
+}
+
+/* Class selector: .bold-text for bold text */
+.bold-text {
+    font-weight: bold;
+}
+
+/* ID selector: #main-header for styling the main header */
+#main-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* ID selector: #special-paragraph for specific styling of a paragraph */
+#special-paragraph {
+    font-size: 18px;
+    color: #ff6347;
+    background-color: #f0e68c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Descendant selector: Style paragraphs inside articles */
+article p {
+    font-style: italic;
+    color: #555;
+}
+
+
+/* Styling for Contact Form */
+
+.contact-title {
+    display:inline;
+    justify-content: center;
+    align-items: center;
+    height: 100; /* Full screen height */
+    text-align: center;
+}
+
+.contact-title h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 0;
+    
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.form-container{
+    background-color: #ccc;
+    border-radius: 2%;
+}
+.contact-container div {
+    flex: 1;
+    padding: 50px;
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #3f4f61;
+}
+
+
+/* Special Styling for other pages */
+.education-section {
+    text-align: left; /* Ensures text starts from the left */
+    margin-left: 20px; /* Adjusts left margin */
+}
+
+.education-section h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.education-section ol {
+    padding-left: 40px; /* Adds left padding to the ordered list */
+}
+
+.education-section li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+strong {
+    font-size: 1.1rem;
+    color: #222;
+}
+
+em {
+    color: #555;
+    font-style: italic;
+}
+.new-buttonS {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+}
+
+.experience {
+    margin: 20px;
+    padding: 20px;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+dl {
+    margin-left: 20px;
+}
+
+dt {
+    font-weight: bold;
+    color: #222;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+a {
+    color: #024a74;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.youtube-short {
+    display: flex;
+    justify-content: center; /* Horizontally centers the iframe */
+    align-items: center;     /* Vertically centers the iframe */
+    padding-bottom: 20px;
+}
+
+/* Gallery Section */
+.gallery {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding around the entire gallery */
+    background-color: #f4f4f4; /* Optional: Add a background color */
+}
+
+/* Grid-based gallery container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between images */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Individual gallery items */
+.gallery-item {
+    width: auto;
+    height: 250px; /* Equal height for all items */
+    overflow: hidden; /* Hide any overflow */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Images inside the gallery */
+.gallery-item img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Ensures images cover the box while maintaining aspect ratio */
+    display: block;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
